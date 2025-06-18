@@ -1,0 +1,25 @@
+.bg-dotted {
+    background-image: linear-gradient(to right, black 50%, transparent 50%);
+    background-size: 8px 1px;
+    background-repeat: repeat-x;
+}
+
+.bg-dotted .before\:bg-white::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-image: linear-gradient(to right, black 50%, transparent 50%);
+    background-size: 8px 1px;
+    background-repeat: repeat-x;
+}
+
+.bg-dotted .after\:bg-white::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    background: black;
+}

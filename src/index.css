@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Margarine&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-borel: 'Borel', cursive;
+    --font-margarine: 'Margarine', cursive;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-image: url('./assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bgColor {
+    background: hsl(0deg 0% 0% / 0.3);
+}
+.edge {
+    background: linear-gradient(
+            to left,
+            hsl(340deg 100% 16%) 0%,
+            hsl(340deg 100% 32%) 8%,
+            hsl(340deg 100% 32%) 92%,
+            hsl(340deg 100% 16%) 100%
+    );
+}
+.front {
+    background: hsl(345deg 100% 47%);
+}
+.btn:hover .front {
+    @apply -translate-y-1.5 transition-transform duration-[250ms] ease-[cubic-bezier(.3,0.7,0.4,1.5)];
+}
+.btn:active .front {
+    @apply -translate-y-0.5 transition-transform duration-[34ms];
+}
+.btn:hover .shadows {
+    @apply translate-y-1 transition-transform duration-[250ms] ease-[cubic-bezier(.3,0.7,0.4,1.5)];
+}
+.btn:active .shadows {
+    @apply translate-y-px transition-transform duration-[34ms];
+}
+.btn:focus:not(:focus-visible) {
+    outline: none;
+}
+.modal {
+    background: linear-gradient(145deg, #ba66dc, #7e4696);
+}
