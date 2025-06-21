@@ -57,7 +57,7 @@ const GiftCard = () => {
                         >
                             <TypeAnimation
                                 sequence={[
-                                    "Dont Forget to Take My Gift!",
+                                    "Don't Forget to Take My Gift!",
                                     1000,
                                 ]}
                                 wrapper="span"
@@ -69,7 +69,7 @@ const GiftCard = () => {
                     ) : (
                         <div key="birthday-gift">
                             <WavyText
-                                text="Its an Unicorn for you! 🦄"
+                                text="It's a Unicorn for you! 🦄"
                                 repeat={1}
                                 replay={true}
                                 className=" text-4xl font-bold font-margarine text-pink-600 m-0"
