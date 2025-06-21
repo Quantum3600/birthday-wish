@@ -32,9 +32,9 @@ function LastPage() {
                         onClick={() => setIsModalOpen(false)}
                     >
                         <Motion.div
-                            className="bg-[#9C56B9] rounded-4xl p-6 max-w-md w-full m-20 flex flex-col gap-4 shadow-2xl z-50 "
+                            className="bg-[#9C56B9] rounded-4xl p-6 max-w-lg w-full m-20 flex flex-col gap-4 shadow-2xl z-50"
                             initial={{ scale: 0.5, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
+                            animate={{ scale: 1.2, opacity: 1 }}
                             exit={{ scale: 0.5, opacity: 0 }}
                             onClick={e => e.stopPropagation()}
                         >

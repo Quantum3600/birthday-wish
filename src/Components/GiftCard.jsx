@@ -127,7 +127,7 @@ const GiftCard = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 50 }}
                         transition={{ duration: 0.5 }}
-                        className="absolute bottom-8 left-0 right-0 text-center"
+                        className="absolute bottom-10 left-0 right-0 text-center"
                     >
                         <span className="text-2xl font-borel font-semibold text-pink-600">
                             Thank you for accepting my gift!<br/> See you soon!💝👋
